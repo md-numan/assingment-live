@@ -7,98 +7,263 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
-<main class="flex-shrink-0">
-<header class="bg-danger text-white text-center py-3">
-    <h1>Welcome to Webpage</h1>
-</header>
 
-<!--about-->
-<section class="bg-light py-5">
-    <div class="container px-5">
-        <div class="row gx-5 justify-content-center">
-            <div class="col-xxl-8">
-                <div class="text-center my-5">
-                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">
-                                    About Me</span></h2>
-                    <p class="lead fw-light md-4">
-                        My name is start bootstrap and I help brands grow</p>
-                    <p class="text-muted">dolor sit amet, consectetur adipisicing elit.
-                        Fugit dolorum itaque qui unde quisquam consequatur<br>
-                        autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa!
-                        Praesentium ratione atque
-                        dolorem?</p>
-                    <div class="d-flex gap-4 fs-1 justify-content-center">
-                        <a class="text-gradient" href="#!">
-                            <i class="bi bi-twitter"></i></a>
-                        <a class="text-gradient" href="#!">
-                            <i class="bi bi-linkedin"></i></a>
-                        <a class="text-gradient" href="#!">
-                            <i class="bi bi-github"></i></a>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">VegPledge</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Map
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Explore More Food Options!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <a href="https://www.google.com/search?rlz=1C5CHFA_enUS759US759&tbm=lcl&sxsrf=ACYBGNR6UhFhWzWbgm4O0KhPjdpAo9aa7g%3A1573523295246&ei=Xw_KXdvWDueZ_Qbfh6WAAQ&q=Vegetarian%20food%20near%20me&oq=Vegetarian+food+near+me&gs
+                                _l=psy-ab.3..0l7j0i20i263k1j0l2.1133965.1137690.0.1137824.27.21.3.0.0.0.152.1925.14j7.21.0....0...1c.1.64.psy-ab..3.24.1936...35i39k1j0i67k1j0i273k1j0i131k1j0i10i67k1.0.jFenZyWu-ow&tbs=lrf:!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sCgIIASAB,lf:1,lf_ui:9&rlst=f#rlfi=hd:;si:;mv:[[40.8708233,-73.85051159999999],[40.846698200000006,-73.90236329999999]];tbs:lrf:!2m1!1e2!2m1!1e5!2m1!1e1!2m1!1e3!3sCgIIASABKgJVUw,lf:1,lf_ui:9">Vegetarian Places Near You!</a>
+                                <img src="https://cnet2.cbsistatic.com/img/wJuaKPhBnj3N8xm_94h46TPgWBI=/2019/08/28/527cd2c5-28c8-47a0-8463-9bd18c0a0a18/google-maps-1.jpg" class="w-100" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Challenge Information
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Trophies</a>
+                    <a class="dropdown-item" href="#"></a>
+                    <p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About Me</a>
+                    </p>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                <div class="card card-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1">Challenge Day Number</label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Day Number 2 of 5">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">What are you in the mood for?</label>
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Breakfast/Bakery</option>
+                                                <option>Diner/Deli</option>
+                                                <option>Italian</option>
+                                                <option>American</option>
+                                                <option>Indian</option>
+                                                <option>Chinese</option>
+                                                <option>Japanese</option>
+                                                <option>Other</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Help</a>
+                    </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </div>
-</section>
-</main>
-
-<!--table-->
-
-<div class="container">
-    <div class="table ">
-        <table class="table table-dark table-hover table-striped-columns">
-
-            <tr>
-                <th>Name</th>
-                <th>Roll</th>
-                <th>section</th>
-                <th>Mark</th>
-            </tr>
-            <tr>
-                <td>Numan</td>
-                <td>569093</td>
-                <td>A</td>
-                <td>90</td>
-            </tr>
-            <tr>
-                <td>Sofik</td>
-                <td>569092</td>
-                <td>A</td>
-                <td>90</td>
-            </tr>
-            <tr>
-                <td>Sifat</td>
-                <td>569091</td>
-                <td>A</td>
-                <td>90</td>
-            </tr>
-        </table>
+</nav>
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="https://s3-media4.fl.yelpcdn.com/bphoto/cr8-XR2Rl2yKsxzi_spfRg/348s.jpg" class="w-100" alt="">
     </div>
+    <div class="col-md-6 position-static p-4 pl-md-0">
+        <h5 class="mt-0">P.S. Kitchen</h5>
+        <p>Place for vegan plates & bar snacks with style, donating all of its profits to charity. 2/4 Stars Towards Trophy. $$</p>
+        <a href="https://www.google.com/maps/place/P.S.+Kitchen/@40.760666,-73.9888157,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2585682c56885:0x5a0e4a1c6e679eef!8m2!3d40.760662!4d-73.986627" class="stretched-link">Go here!</a>
+    </div>
+
+</div>
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="https://images.media-allrecipes.com/userphotos/720x405/5517964.jpg" class="w-100" alt="">
+    </div>
+    <This class="col-md-6 position-static p-4 pl-md-0">
+        <h5 class="mt-0">Homemade Veggie Pizza</h5>
+        <p> "This has become my go-to recipe for pizza dough and sauce! I always mix up the veggies and cheeses, but definitely a keeper for my family" -Eva. 4/4 Stars Towards Trophy.</p>
+        <a href="https://www.allrecipes.com/recipe/222734/homemade-veggie-pizza/?internalSource=streams&referringId=87&referringContentType=Recipe%20Hub&clickId=st_trending_s" class="stretched-link">Make It!</a>
+</div>
+</div>
+
+</div>
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="http://www.peacefoodcafe.com/wp/wp-content/gallery/about/uptown4.jpg" class="w-100" alt="">
+    </div>
+    <div class="col-md-6 position-static p-4 pl-md-0">
+        <h5 class="mt-0">Peacefood Cafe</h5>
+        <p>Homey spot for raw & vegan sandwiches, juices, teas & desserts, plus daily dinner specials. 4/4 Stars Towards Trophy. $$</p>
+        <a href="https://www.google.com/maps/place/Peacefood +Cafe/@40.785279,-73.9792007,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25885df0bd5db:0x21704b2918766fd4!8m2!3d40.785275!4d-73.977012" class="stretched-link">Go here!</a>
+    </div>
+
+
+</div>
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="https://images.media-allrecipes.com/userphotos/720x405/2969063.jpg" class="w-100" alt="">
+    </div>
+    <This class="col-md-6 position-static p-4 pl-md-0">
+        <h5 class="mt-0">Blueberry Smoothie Bowl</h5>
+        <p> "Quick and easy blueberry smoothie topped with coconut, almonds, and banana"- Alli. 1/4 Stars Towards Trophy.</p>
+        <a href="https://www.allrecipes.com/recipe/245208/blueberry-smoothie-bowl/?internalSource=staff%20pick&referringId=87&referringContentType=Recipe%20Hub" class="stretched-link">Make It!</a>
+</div>
+</div>
+
+</div>
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 mb-md-0 p-md-4">
+        <img src="https://bit.ly/32Itze1" class="w-100">
+    </div>
+    <div class="col-md-6 position-static p-4 pl-md-0">
+        <h5 class="mt-0">Blossom on Columbus</h5>
+        <p>A long menu of inventive vegan cuisine served in an earth-toned space on the Upper West Side. 3/4 Stars Towards Trophy. $$</p>
+        <a href="https://www.google.com/maps/place/Blossom+on+Columbus/@40.785311,-73.9748607,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25885192d4cbd:0xb04799975c4674f7!8m2!3d40.785307!4d-73.972672" class="stretched-link">Go here!</a>
+    </div>
+</div>
 </div>
 
 
 
-<!--footer-->
-<footer class="bg-white py-4 mt-auto shadow-sm">
-    <div class="container px-5">
-        <div class="row w-100 align-content-center justify-content-center flex-column flex-sm-row">
-            <div class="col-auto"><div class="small m-0">
-                copyright &copy; Your Website 2024</div></div>
-            <div class="col-auto">
-                <a class="small" href="#">Privacy</a>
-                <span class="mx-1">&middot;</span>
-                <a class="small" href="#">Terms</a>
-                <span class="mx-1">&middot;</span>
-                <a class="small" href="#">Contact</a>
-            </div>
-        </div>
-    </div>
-</footer>
 
 
+
+
+<!--<main class="flex-shrink-0">-->
+<!--<header class="bg-danger text-white text-center py-3">-->
+<!--    <h1>Welcome to Webpage</h1>-->
+<!--</header>-->
+
+<!--&lt;!&ndash;about&ndash;&gt;-->
+<!--<section class="bg-light py-5">-->
+<!--    <div class="container px-5">-->
+<!--        <div class="row gx-5 justify-content-center">-->
+<!--            <div class="col-xxl-8">-->
+<!--                <div class="text-center my-5">-->
+<!--                    <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">-->
+<!--                                    About Me</span></h2>-->
+<!--                    <p class="lead fw-light md-4">-->
+<!--                        My name is start bootstrap and I help brands grow</p>-->
+<!--                    <p class="text-muted">dolor sit amet, consectetur adipisicing elit.-->
+<!--                        Fugit dolorum itaque qui unde quisquam consequatur<br>-->
+<!--                        autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa!-->
+<!--                        Praesentium ratione atque-->
+<!--                        dolorem?</p>-->
+<!--                    <div class="d-flex gap-4 fs-1 justify-content-center">-->
+<!--                        <a class="text-gradient" href="#!">-->
+<!--                            <i class="bi bi-twitter"></i></a>-->
+<!--                        <a class="text-gradient" href="#!">-->
+<!--                            <i class="bi bi-linkedin"></i></a>-->
+<!--                        <a class="text-gradient" href="#!">-->
+<!--                            <i class="bi bi-github"></i></a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--</main>-->
+
+<!--&lt;!&ndash;table&ndash;&gt;-->
+
+<!--<div class="container">-->
+<!--    <div class="table ">-->
+<!--        <table class="table table-dark table-hover table-striped-columns">-->
+
+<!--            <tr>-->
+<!--                <th>Name</th>-->
+<!--                <th>Roll</th>-->
+<!--                <th>section</th>-->
+<!--                <th>Mark</th>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Numan</td>-->
+<!--                <td>569093</td>-->
+<!--                <td>A</td>-->
+<!--                <td>90</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Sofik</td>-->
+<!--                <td>569092</td>-->
+<!--                <td>A</td>-->
+<!--                <td>90</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Sifat</td>-->
+<!--                <td>569091</td>-->
+<!--                <td>A</td>-->
+<!--                <td>90</td>-->
+<!--            </tr>-->
+<!--        </table>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
+<!--&lt;!&ndash;footer&ndash;&gt;-->
+<!--<footer class="bg-white py-4 mt-auto shadow-sm">-->
+<!--    <div class="container px-5">-->
+<!--        <div class="row w-100 align-content-center justify-content-center flex-column flex-sm-row">-->
+<!--            <div class="col-auto"><div class="small m-0">-->
+<!--                copyright &copy; Your Website 2024</div></div>-->
+<!--            <div class="col-auto">-->
+<!--                <a class="small" href="#">Privacy</a>-->
+<!--                <span class="mx-1">&middot;</span>-->
+<!--                <a class="small" href="#">Terms</a>-->
+<!--                <span class="mx-1">&middot;</span>-->
+<!--                <a class="small" href="#">Contact</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
+
+
+
+
+
+                <!-- Optional JavaScript -->
+                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
